@@ -1,0 +1,69 @@
+---
+title: "README"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Contents:
+
+- Goals
+- Suggestions
+
+##################
+last changed: 
+`r Sys.Date()`
+##################
+
+# Goals
+I want to create a set of scripts that I can 
+call in every pull request of the blog. 
+I actually described some part in the wishlist of rconsortium [1].
+
+
+The scripts need to:
+
+[] read the code and lint for common style mistakes
+[] read the text in the blogpost and spell check the content
+[] calculate text difficulty 
+[] optinally return some suggestions for improvement
+
+
+## Suggestions so far:
+
+- hunspell can do variety of languages spell checking. 
+- readability can be determined with koRpus package
+- linting can be done with lintr
+
+Idea: create a script for travis-ci so that checks are done. 
+pref. check only latest addition. 
+
+ultimately a seperate github integration would be nicer.
+
+
+
+
+[1]: [issue on rwishlist](https://github.com/RConsortium/wishlist/issues/10)
+
+
+
+
+
+# Contribute
+
+
+- Issue Tracker: github.com/rmhogervorst/linting_spelling/issues
+- Source Code: github.com/rmhogervorst/linting_spelling
+
+# Support
+
+
+If you are having issues, please let us know.
+
+License
+-------
+
+MIT
